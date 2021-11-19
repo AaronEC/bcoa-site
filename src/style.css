@@ -1,12 +1,112 @@
 /* Custom Edits */
+
+/* Global */
+
+#global-wrapper {
+  padding: 0%;
+  width: 100vw;
+  max-width: 100vw;
+}
+
+#fix-row {
+  max-width: 1024px;
+  margin: auto;
+}
+
+/* Nav Bar */
+
 #nav-container {
   padding: 0%;
   max-width: 1024px;
-  background-color: #daf1e0;
+  background-color: #242f27;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  box-shadow: 0px 1px 10px 10px rgba(0,0,0,0.24);
+  -webkit-box-shadow: 0px 1px 10px 10px rgba(0,0,0,0.24);
+  -moz-box-shadow: 0px 1px 10px 10px rgba(0,0,0,0.24);
 }
 
 #top-nav {
+  border-radius: 20px;
+  padding: 1%;
+  margin: 0px;
+  padding-top: 2%;
   background-color: #242f27;
+}
+
+#bottom-nav {
+  font-size: large;
+  border-radius: 20px;
+  padding: 1%;
+  margin: 0px;
+  background-color: #242f27;
+}
+
+/* Main Content*/
+
+#news-container {
+  border-radius: 20px;
+  padding: 0%;
+  max-width: 1024px;
+  background-color: #e4ece6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  box-shadow: 0px 1px 10px 10px rgba(0,0,0,0.24);
+  -webkit-box-shadow: 0px 1px 10px 10px rgba(0,0,0,0.24);
+  -moz-box-shadow: 0px 1px 10px 10px rgba(0,0,0,0.24);
+}
+
+#main-container {
+  padding: 0%;
+  max-width: 1024px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#news-col{
+  padding: 0px;
+  padding-left: 5px;
+}
+
+/* Sidebar */
+
+#sidebar-col {
+  max-width: 196px;  
+  padding: 0px;
+  padding-right: 5px;
+  display: flex;
+}
+
+#sidebar-container {
+  border-radius: 20px;
+  padding: 0%;
+  max-height: 582px;
+
+  position: relative;
+  overflow: hidden;
+
+  box-shadow: 0px 1px 10px 10px rgba(0,0,0,0.24);
+  -webkit-box-shadow: 0px 1px 10px 10px rgba(0,0,0,0.24);
+  -moz-box-shadow: 0px 1px 10px 10px rgba(0,0,0,0.24);
+}
+
+/* Footer */
+
+#footer-container {
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0%;
+  max-width: 1024px;
+  background-color: #e4ece6;
+  
+
+  box-shadow: 0px 1px 10px 10px rgba(0,0,0,0.24);
+  -webkit-box-shadow: 0px 1px 10px 10px rgba(0,0,0,0.24);
+  -moz-box-shadow: 0px 1px 10px 10px rgba(0,0,0,0.24);
 }
 
 /* CSS Custom Properties Definitions */
@@ -82,7 +182,7 @@
 }
 
 #___gatsby {
-  background-color: #373737;
+  background-color: #eeeeee;
 }
 
 html {
@@ -90,7 +190,7 @@ html {
   font-size: var(--fontSize-root);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #373737;
+  background-color: #eeeeee;
 }
 
 body {

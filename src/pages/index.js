@@ -24,9 +24,11 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-
-      <Seo title="All posts" />
+      <Seo title="Home" />
       <ol style={{ listStyle: `none` }}>
+        <p style={{ paddingTop: `20px` }}> Welcome to our club website! Please use the links above to find out 
+          more about our club, or you can view the latest news and updates from 
+          the club on the news feed below. </p>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
 

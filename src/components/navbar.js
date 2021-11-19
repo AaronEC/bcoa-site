@@ -6,20 +6,39 @@ import banner from "../images/banner.jpg"
 const NavigatonBar = () => {
   return (
     <>
+      <Container id="top-nav" fluid>
+        <div class="text-center">
+          <h6 class="display-6 text-white">Burnham Company of Archers Club Website</h6>
+        </div>
+      </Container>
       <Image src={banner} fluid />
-      <Navbar id="top-nav" variant="dark">
+      <Navbar id="bottom-nav" variant="dark">
+        <div class="d-md-flex d-block flex-row mx-md-auto mx-0">
         <Container>
-          <Navbar.Brand href="#home">Burnham Company of Archers Club Website</Navbar.Brand>
+        {/* <Navbar.Brand href="#home">Burnham Company of Archers Club Website</Navbar.Brand> */}
           <Navbar.Toggle />
           <Navbar.Collapse id="responsive-navbar-nav" class="text.right">
             <Nav>
-              <Nav.Link href="#deets">More deets</Nav.Link>
-              <Nav.Link eventKey={2} href="#memes">
-                Dank memes
+              <Nav.Link href="/">Home</Nav.Link>
+              <Nav.Link eventKey={2} href="#about">
+                Beginners
+              </Nav.Link>
+              <Nav.Link eventKey={3} href="#about">
+                Events
+              </Nav.Link>
+              <Nav.Link eventKey={4} href="#about">
+                Finding Us
+              </Nav.Link>
+              <Nav.Link eventKey={5} href="#about">
+                Gallery
+              </Nav.Link>
+              <Nav.Link eventKey={6} href="#about">
+                Contact Us
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
+        </div>
       </Navbar>
     </>
   )
