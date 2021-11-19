@@ -1,7 +1,7 @@
 // import 'bootstrap/dist/css/bootstrap.min.css'
 import {Container, Navbar, Nav, Image, Row, Col} from "react-bootstrap"
 import * as React from "react"
-import banner from "../images/banner.jpg"
+import banner from "../../static/banner.jpg"
 
 const NavigatonBar = () => {
   return (
@@ -13,7 +13,7 @@ const NavigatonBar = () => {
       </Container>
       <Image src={banner} fluid />
       <Navbar id="bottom-nav" variant="dark">
-        <div class="d-md-flex d-block flex-row mx-md-auto mx-0">
+        <div class="md-auto">
         <Container>
         {/* <Navbar.Brand href="#home">Burnham Company of Archers Club Website</Navbar.Brand> */}
           <Navbar.Toggle />

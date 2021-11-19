@@ -1,9 +1,9 @@
 import React from 'react'
 import {Image} from "react-bootstrap"
-import image01 from '../images/sidebar01.jpg'
-import image02 from '../images/sidebar02.jpg'
-import image03 from '../images/sidebar03.jpg'
-import image04 from '../images/sidebar04.jpg'
+import image01 from '../../static/sidebar01.jpg'
+import image02 from '../../static/sidebar02.jpg'
+import image03 from '../../static/sidebar03.jpg'
+import image04 from '../../static/sidebar04.jpg'
 
 export default function sidebar() {
     

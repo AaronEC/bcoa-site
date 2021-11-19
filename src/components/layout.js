@@ -42,6 +42,11 @@ const Layout = ({ location, title, children }) => {
             <main>{children}</main>
           </Container>
         </Col>
+        <Col sm id="sidebar-col">
+          <Container id="sidebar-container">
+            <Sidebar />
+          </Container>
+        </Col>  
       </Row>
     </Container>
     <Container id="footer-container">
