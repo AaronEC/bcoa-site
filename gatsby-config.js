@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/bcoa-site",
   siteMetadata: {
     title: `BCOA Club Website`,
     author: {
@@ -10,7 +11,6 @@ module.exports = {
     social: {
       twitter: ``,
     },
-    pathPrefix: "/bcoa-site-deploy",
   },
   plugins: [
     `gatsby-plugin-sass`,
