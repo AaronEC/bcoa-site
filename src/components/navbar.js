@@ -1,7 +1,7 @@
 // import 'bootstrap/dist/css/bootstrap.min.css'
 import {Container, Navbar, Nav, Image, Row, Col} from "react-bootstrap"
 import * as React from "react"
-import banner from "../../static/banner.jpg"
+import banner from "../images/banner.jpg"
 
 const NavigatonBar = () => {
   return (
@@ -18,7 +18,7 @@ const NavigatonBar = () => {
         {/* <Navbar.Brand href="#home">Burnham Company of Archers Club Website</Navbar.Brand> */}
           <Navbar.Toggle />
           <Navbar.Collapse id="responsive-navbar-nav" class="text.right">
-            <Nav>
+            <Nav class="navbar-nav justify-content-center">
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link eventKey={2} href="#about">
                 Beginners

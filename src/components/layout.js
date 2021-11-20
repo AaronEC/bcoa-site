@@ -2,6 +2,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 import Navbar from "./navbar"
 import Sidebar from "./sidebar"
+import SideGallery from "./side_gallery"
 import {Container, Col, Row} from "react-bootstrap"
 
 const Layout = ({ location, title, children }) => {
@@ -26,7 +27,8 @@ const Layout = ({ location, title, children }) => {
   
 
   return (
-    <div id="global-wrapper" className="global-wrapper" data-is-root-path={isRootPath}>
+    // <div id="global-wrapper" className="global-wrapper" data-is-root-path={isRootPath}>
+    <>
     <Container id="nav-container">
       <Navbar />
     </Container>
@@ -41,21 +43,21 @@ const Layout = ({ location, title, children }) => {
           <Container id="news-container">
             <main>{children}</main>
           </Container>
+          <Container id="footer-container">
+            <footer class="text-center">
+              © BCOA {new Date().getFullYear()}
+            </footer>
+          </Container>
         </Col>
         <Col sm id="sidebar-col">
           <Container id="sidebar-container">
-            <Sidebar />
+            <SideGallery />
           </Container>
         </Col>  
       </Row>
     </Container>
-    <Container id="footer-container">
-      <footer class="text-center">
-        © BCOA {new Date().getFullYear()}
-      </footer>
-    </Container>
-    
-</div>
+    </>
+// </div>
   )
 }
 
