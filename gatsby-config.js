@@ -7,7 +7,7 @@ module.exports = {
       summary: `BCOA Webmaster.`,
     },
     description: `Club website for the Burnham Company of Archers.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    siteUrl: `https://http://www.burnhamcompanyofarchers.co.uk/`,
     social: {
       twitter: ``,
     },
@@ -18,8 +18,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
+        path: `${__dirname}/content/news`,
+        name: `news`,
       },
     },
     {
@@ -107,7 +107,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "Gatsby Starter Blog RSS Feed",
+            title: "News RSS Feed",
           },
         ],
       },
@@ -115,7 +115,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
+        name: `BCOA Club Site`,
         short_name: `GatsbyJS`,
         start_url: `/`,
         background_color: `#ffffff`,

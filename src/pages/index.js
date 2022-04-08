@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
-import Layout from "../components/layout"
+import Layout from "../components/home"
 import Seo from "../components/seo"
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -26,6 +26,7 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Seo title="Home" />
       <ol style={{ listStyle: `none` }}>
+        <h3>Home Page</h3>
         <p style={{ paddingTop: `20px` }}> Welcome to our club website! Please use the links above to find out 
           more about our club, or you can view the latest news and updates from 
           the club on the news feed below. </p>
@@ -59,7 +60,7 @@ const BlogIndex = ({ data, location }) => {
             </li>
           )
         })}
-      </ol>
+      </ol>      
     </Layout>
   )
 }

@@ -20,20 +20,23 @@ const NavigatonBar = () => {
           <Navbar.Collapse id="responsive-navbar-nav" class="text.right">
             <Nav class="navbar-nav justify-content-center">
               <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link eventKey={2} href="#about">
+              <Nav.Link eventKey={2} href="/about">
+                About
+              </Nav.Link>
+              <Nav.Link eventKey={3} href="/beginners">
                 Beginners
               </Nav.Link>
-              <Nav.Link eventKey={3} href="#about">
+              <Nav.Link eventKey={4} href="/events">
                 Events
               </Nav.Link>
-              <Nav.Link eventKey={4} href="#about">
-                Finding Us
+              <Nav.Link eventKey={5} href="/finding">
+                Location
               </Nav.Link>
-              <Nav.Link eventKey={5} href="#about">
+              <Nav.Link eventKey={6} href="/gallery">
                 Gallery
               </Nav.Link>
-              <Nav.Link eventKey={6} href="#about">
-                Contact Us
+              <Nav.Link eventKey={7} href="/contact">
+                Contact
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
