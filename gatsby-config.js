@@ -1,5 +1,6 @@
 module.exports = {
-  pathPrefix: "/bcoa-site",
+  pathPrefix: "/bcoa-site", 
+  // "/bcoa-site"
   siteMetadata: {
     title: `BCOA Club Website`,
     author: {

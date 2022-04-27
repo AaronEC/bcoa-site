@@ -3,15 +3,14 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-const About = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title
-
+const Location = ({ data, location }) => {
+  
   return (
-    <Layout location={location} title={siteTitle}>
-      <Seo title="About" />
+    <Layout location={location} title={'BCOA'}>
+      <Seo title="Location" />
       <ol style={{ listStyle: `none`, padding: '0px', margin: '20px' }}>
         <h3>How to Find us</h3>
-        <p style={{ paddingTop: `20px` }}>Burnham Company of Archers was originally founded in the early seventies as "King Alfred's Bowmen".</p>
+        <p style={{ paddingTop: `20px` }}>MAP ETC TO GO HERE.</p>
 
 
         <p>From junction 22 of the M5, follow signs for Burhnam-On-Sea where you will
@@ -34,4 +33,4 @@ const About = ({ data, location }) => {
   )
 }
 
-export default About
+export default Location

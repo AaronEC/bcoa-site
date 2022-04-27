@@ -3,13 +3,14 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { pathPrefix } from "../../gatsby-config"
 
-const About = ({ data, location }) => {
+const Beginners = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo title="About" />
+      <Seo title="Beginners" />
       <ol style={{ listStyle: `none`, padding: '0px', margin: '20px'}}>
       <h3>Beginners Courses</h3>
         <div class="content2" style={{ paddingTop: `20px` }}>
@@ -24,7 +25,7 @@ const About = ({ data, location }) => {
             of abilities and age groups within our club that make the most of our facilities.
             Be prepared for some rib tickling (it's what we're good at). The only sensible
             bit is safety (we do take that seriously)</p>
-          <img class="image" width="100%" src="/beginnersbanner.jpg"></img>
+          <img class="image" width="100%" src={pathPrefix + "/beginnersbanner.jpg"}></img>
           <p><b>Course Details</b></p>
           <p>Courses are run throughout the year on Saturday mornings. During winter months these are held at our indoor shooting range (Puriton Sports Centre).</p>
           <p>They are made up of 6 consecutive weeks costing GBP 60 per person for the
@@ -36,7 +37,7 @@ const About = ({ data, location }) => {
   )
 }
 
-export default About
+export default Beginners
 
 export const pageQuery = graphql`
   query {

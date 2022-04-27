@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "bcoa-site",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "BCOA club website",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Aaron Cardwell <aaron_cardwell@hotmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/AaronEC/bcoa-site"
   },
   "dependencies": {
     "bootstrap": "^5.1.3",
@@ -40,7 +40,7 @@
     "prettier": "^2.4.1",
     "sass": "^1.43.4"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/AaronEC/bcoa-site",
   "keywords": [
     "gatsby"
   ],
@@ -48,7 +48,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/AaronEC/bcoa-site.git"
   },
   "scripts": {
     "build": "gatsby build --prefix-paths && gh-pages -d public",

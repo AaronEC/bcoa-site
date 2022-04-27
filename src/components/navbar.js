@@ -2,54 +2,52 @@
 import {Container, Navbar, Nav, Image, Row, Col} from "react-bootstrap"
 import * as React from "react"
 import banner from "../images/banner.jpg"
+import { pathPrefix } from "../../gatsby-config"
 
 const NavigatonBar = () => {
   return (
     <>
       <Container id="top-nav" fluid>
         <div class="text-center">
-          <h6 class="display-6 text-white">Burnham Company of Archers Club Website</h6>
+          <h6 class="display-6 text-white">Burnham Company of Archers</h6>
         </div>
       </Container>
       <Image src={banner} fluid />
-      <Navbar id="bottom-nav" variant="dark">
-        <div class="md-auto">
-        <Container>
+      <div class="text-center">
+      <Navbar id="bottom-nav" collapseOnSelect expand="lg" variant="dark">
+        <Container class="md-auto justify-content-center">
         {/* <Navbar.Brand href="#home">Burnham Company of Archers Club Website</Navbar.Brand> */}
-          <Navbar.Toggle />
-          <Navbar.Collapse id="responsive-navbar-nav" class="text.right">
-            <Nav class="navbar-nav justify-content-center">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link eventKey={2} href="/about">
+          <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="justify-content-center" style={{ flex: 1}}>
+              <Nav.Link eventKey={1} href={pathPrefix + "/"}>
+                Home
+              </Nav.Link>
+              <Nav.Link eventKey={2} href={pathPrefix + "/about"}>
                 About
               </Nav.Link>
-              <Nav.Link eventKey={3} href="/beginners">
+              <Nav.Link eventKey={3} href={pathPrefix + "/beginners"}>
                 Beginners
               </Nav.Link>
-              <Nav.Link eventKey={4} href="/events">
+              <Nav.Link eventKey={4} href={pathPrefix + "/events"}>
                 Events
               </Nav.Link>
-              <Nav.Link eventKey={5} href="/finding">
+              <Nav.Link eventKey={5} href={pathPrefix + "/location"}>
                 Location
               </Nav.Link>
-              <Nav.Link eventKey={6} href="/gallery">
+              <Nav.Link eventKey={6} href={pathPrefix + "/gallery"}>
                 Gallery
               </Nav.Link>
-              <Nav.Link eventKey={7} href="/contact">
+              <Nav.Link eventKey={7} href={pathPrefix + "/contact"}>
                 Contact
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
-        </div>
       </Navbar>
+      </div>
     </>
   )
 }
 
 export default NavigatonBar
-          // <Breadcrumb>
-          //   <Breadcrumb.Item>TEST</Breadcrumb.Item>
-          //   <Breadcrumb.Item>TEST</Breadcrumb.Item>
-          //   <Breadcrumb.Item>TEST</Breadcrumb.Item>
-          // </Breadcrumb>
